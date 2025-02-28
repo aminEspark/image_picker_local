@@ -37,7 +37,7 @@ const val LIST_PREFIX = "VGhpcyBpcyB0aGUgcHJlZml4IGZvciBhIGxpc3Qu"
 const val JSON_LIST_PREFIX = LIST_PREFIX + "!"
 const val DOUBLE_PREFIX = "VGhpcyBpcyB0aGUgcHJlZml4IGZvciBEb3VibGUu"
 
-private val Context.sharedPreferencesDataStore: DataStore<Preferences> by
+val Context.sharedPreferencesDataStore: DataStore<Preferences> by
     preferencesDataStore(SHARED_PREFERENCES_NAME)
 
 /// SharedPreferencesPlugin

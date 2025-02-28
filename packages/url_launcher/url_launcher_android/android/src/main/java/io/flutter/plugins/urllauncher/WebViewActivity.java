@@ -68,9 +68,9 @@ public class WebViewActivity extends Activity {
         @RequiresApi(Build.VERSION_CODES.N)
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
-          if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+          // if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             view.loadUrl(request.getUrl().toString());
-          }
+          // }
           return false;
         }
       };
